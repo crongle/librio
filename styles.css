@@ -1,0 +1,129 @@
+body {
+  background-color: hsla(42, 33%, 92%, 1);
+}
+
+h1 {
+  color: hsla(24, 87%, 72%, 0.9);
+  font-weight: bolder;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.headingStyling {
+  background-color: white;
+  width: 10%;
+  height: 0.75em;
+  position: absolute;
+  top: 0.75em;
+  left: 45%;
+  transform: rotate(-5deg);
+  z-index: 1;
+}
+
+.header {
+  background-color: hsla(123, 45%, 84%, 1);
+}
+
+.formButton {
+  width: 100px;
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: hsla(139, 45%, 84%, 1);
+  color: hsla(24, 100%, 60%, 0.9);
+}
+
+#addBookPopup {
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid grey;
+  z-index: 10;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(20px);
+}
+
+.formInput {
+  background-color: hsla(75, 18%, 34%, 0.1);
+  border-radius: 3px;
+  padding: 3px;
+  margin: 5px;
+}
+
+.bookFormButtons {
+  border-radius: 3px;
+  padding: 3px;
+  margin: 5px;
+}
+
+.formTitle {
+  line-height: 1.5em;
+  font-weight: bold;
+  width: 95%;
+  position: relative;
+  float: left;
+}
+
+.formX {
+  line-height: 1.5em;
+  width: 5%;
+  position: relative;
+  float: right;
+  color: hsla(0, 0%, 80%, 1);
+}
+
+.cardContainer {
+  position: relative;
+  width: 20%;
+  margin-left: 40%;
+}
+
+.bookCard {
+  width: 100%;
+  background-color: white;
+  color: 	hsla(0, 36%, 20%, 1);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px hsla(24, 87%, 72%, 0.5);
+}
+
+.bookCardTitle {
+  background-color:	hsla(24, 87%, 72%, 0.9);
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.bookCardAuthor {
+  width: 100%;
+  margin: 5px;
+  display: inline-block;
+}
+
+.bookCardPages {
+  width: 100%;
+  margin: 5px;
+  display: inline-block;
+}
+
+.bookCardStatus {
+  width: auto;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  right: 5px;
+}
+.bookCardStatusRead {
+  background-color:  hsla(123, 45%, 84%, 1);
+}
+.bookCardStatusUnread {
+  background-color: hsla(0, 80%, 70%, 1);
+}

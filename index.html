@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+  <title>
+    Librio
+  </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="headingStyling"></div>
+    <h1>Librio</h1>
+  </div>
+  <div class="formButton" onclick="openPopupForm()">
+    Add book
+  </div>
+
+  <div id="addBookPopup" class="addBook">
+    <p class="formTitle">
+      Add boook to library:
+    </p>
+    <div onclick="closePopupForm()"  class="formX">
+        X
+    </div>
+    <form name="addBook" id="addBook" onsubmit="addBookToLibrary(); return false;">
+      <p>
+        <input type="text" placeholder="Book title" name="title" id="title" class="formInput"></input>
+      </p>
+      <p>
+        <input type="text" placeholder="Author" name="author" id="author" class="formInput"></input>
+      </p>
+      <p>
+        <input type="text" placeholder="Number of pages" name="pages" id="pages" class="formInput"></input>
+      </p>
+      <p>
+        <select name="status" id="status" class="formInput">
+          <option value=1>Read it</option>
+          <option value=0>Not read/finished it</option>
+        </select>
+      </p>
+      <p>
+        <input type="submit" value="Submit" class="bookFormButtons"></input>
+        <input type="reset" value="Reset" class="bookFormButtons"></input>
+      </p>
+    </form>
+  </div>
+
+  <div class="cardContainer">
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
